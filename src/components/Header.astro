@@ -1,5 +1,5 @@
 <header
-  class="navbar w-300 mx-auto fixed top-0 left-0 right-0 mt-3 z-50 shadow-sm rounded-xl bg-base-100"
+  class="navbar w-300 mx-auto hidden lg:flex fixed top-0 left-0 right-0 mt-3 z-50 shadow-sm rounded-xl bg-base-100"
   data-aos="fade_down"
 >
   <div class="flex-1">
@@ -16,4 +16,41 @@
       <li class="btn btn-primary"><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
+</header>
+
+<header class="navbar bg-base-100 shadow-sm lg:hidden">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+      >
+        <li class="btn btn-ghost"><a href="#sobre">Servicios</a></li>
+        <li class="btn btn-ghost">
+          <a href="#quienes-somos">Quienes Somos</a>
+        </li>
+        <li class="btn btn-ghost"><a href="#zonas">Cobertura</a></li>
+        <li class="btn btn-ghost"><a href="#faq">FAQ</a></li>
+        <li class="btn btn-ghost"><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-end">
+    <a class="p-3 text-primary text-xl">Hexatec</a>
+  </div>
 </header>
