@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import "aos/dist/aos.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -11,9 +13,22 @@ import "aos/dist/aos.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
     <title>Hexatec</title>
+    <meta
+      name="description"
+      content="Hexatec ofrece soluciones tecnológicas de vanguardia para impulsar su negocio. Explore nuestros servicios y funciones principales."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Hexatec" />
+    <meta
+      property="og:description"
+      content="Soluciones tecnológicas de vanguardia para su negocio."
+    />
   </head>
+
   <body class="font-sansation">
+    <Header />
     <slot />
     <script src="/src/scripts/aos.js"></script>
+    <Footer />
   </body>
 </html>
