@@ -3,6 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import { Info } from "@lucide/astro";
 import { Phone } from "@lucide/astro";
 import { Cctv } from "@lucide/astro";
+import { Lock } from "@lucide/astro";
+import { Bell } from "@lucide/astro";
+import { Cable } from "@lucide/astro";
+import { Wifi } from "@lucide/astro";
+import { Computer } from "@lucide/astro";
 ---
 
 <Layout>
@@ -27,138 +32,143 @@ import { Cctv } from "@lucide/astro";
   </header>
   <main>
     <section id="hero">
-      <div
-        class="hero min-h-screen"
-        style="background-image: url(/hero.jpg);"
-      >
+      <div class="hero min-h-screen" style="background-image: url(/hero.jpg);">
         <div class="hero-overlay"></div>
         <div
           class="hero-content text-neutral-content text-center"
           data-aos="fade_in"
         >
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <h1 class="mb-5 text-5xl font-bold">Hexatec</h1>
             <p class="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              Seguridad y tecnología al alcance de tu hogar o empresa
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <button class="btn btn-primary">Conocenos</button>
           </div>
         </div>
       </div>
     </section>
     <section
-      id="sobre"
+      id="servicios"
       class="bg-base-200 flex flex-col place-items-center py-10"
     >
       <div
         class="flex flex-col place-items-center gap-3 py-5"
-        data-aos="fade_in"
+        data-aos="fade-in"
       >
-        <p>CORE FEATURES</p>
-        <h2 class="text-3xl">Everything You Need, Nothing You Don't</h2>
-        <p class="w-150 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel sit
-          quasi iste nemo quaerat voluptate qui maiores? Sapiente illum
-          assumenda amet vel temporibus doloribus natus minima. Laboriosam,
-          architecto nisi?
+        <p class="text-secondary font-semibold">NUESTROS SERVICIOS</p>
+        <h2 class="text-3xl font-bold text-primary text-center">
+          Soluciones tecnológicas para hogares, empresas y barrios privados
+        </h2>
+        <p class="w-full max-w-2xl text-center">
+          En Hexatec ofrecemos un servicio integral en seguridad electrónica,
+          conectividad y asesoramiento IT. Elegimos la solución que mejor se
+          adapta a tus necesidades, sin vueltas.
         </p>
-        <button class="btn btn-primary my-5">Boton</button>
+        <a class="btn btn-primary my-5" href="#contacto"
+          >Solicitá tu presupuesto</a
+        >
       </div>
-      <div class="grid grid-cols-2 grid-rows-3 gap-5">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div
-          class="card card-border bg-base-100 w-96"
-          data-aos="fade_in"
+          class="card bg-base-100 w-96 shadow"
+          data-aos="fade-in"
+          data-aos-delay="100"
+        >
+          <div class="card-body">
+            <div class="btn btn-primary w-20"><Cctv /></div>
+            <h2 class="card-title">Cámaras de Seguridad</h2>
+            <p>
+              Instalación de sistemas de videovigilancia IP o analógicos, con
+              visualización remota desde tu celular o PC.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-100 w-96 shadow"
+          data-aos="fade-in"
+          data-aos-delay="150"
+        >
+          <div class="card-body">
+            <div class="btn btn-primary w-20"><Lock /></div>
+            <h2 class="card-title">Control de Accesos</h2>
+            <p>
+              Cerraduras electrónicas, porteros IP, lectores biométricos y
+              tarjetas RFID para mejorar la seguridad de tu ingreso.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-100 w-96 shadow"
+          data-aos="fade-in"
           data-aos-delay="200"
         >
           <div class="card-body">
-            <div class="btn btn-primary w-20"><Info /></div>
-            <h2 class="card-title">Card Title</h2>
+            <div class="btn btn-primary w-20"><Bell /></i></div>
+            <h2 class="card-title">Alarmas Inteligentes</h2>
             <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
+              Alarmas cableadas o inalámbricas integradas con sensores y
+              domótica. Protección total en tiempo real.
             </p>
-            <div class="card-actions justify-end"></div>
           </div>
         </div>
+
         <div
-          class="card card-border bg-base-100 w-96"
-          data-aos="fade_in"
-          data-aos-delay="200"
+          class="card bg-base-100 w-96 shadow"
+          data-aos="fade-in"
+          data-aos-delay="250"
         >
           <div class="card-body">
-            <div class="btn btn-primary w-20"><Info /></div>
-            <h2 class="card-title">Card Title</h2>
+            <div class="btn btn-primary w-20">
+              <Cable />
+            </div>
+            <h2 class="card-title">Redes y Cableado</h2>
             <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
+              Instalación de redes LAN, racks, servidores, switches y cableado
+              estructurado UTP o fibra óptica.
             </p>
-            <div class="card-actions justify-end"></div>
           </div>
         </div>
+
         <div
-          class="card card-border bg-base-100 w-96"
-          data-aos="fade_in"
+          class="card bg-base-100 w-96 shadow"
+          data-aos="fade-in"
           data-aos-delay="300"
         >
           <div class="card-body">
-            <div class="btn btn-primary w-20"><Info /></div>
-            <h2 class="card-title">Card Title</h2>
+            <div class="btn btn-primary w-20">
+              <Wifi />
+            </div>
+            <h2 class="card-title">Conectividad / Starlink</h2>
             <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
+              Enlaces punto a punto, repetidores, redes WiFi de largo alcance e
+              internet satelital para zonas rurales.
             </p>
-            <div class="card-actions justify-end"></div>
           </div>
         </div>
+
         <div
-          class="card card-border bg-base-100 w-96"
-          data-aos="fade_in"
-          data-aos-delay="300"
+          class="card bg-base-100 w-96 shadow"
+          data-aos="fade-in"
+          data-aos-delay="350"
         >
           <div class="card-body">
-            <div class="btn btn-primary w-20"><Info /></div>
-            <h2 class="card-title">Card Title</h2>
+            <div class="btn btn-primary w-20">
+              <Computer />
+            </div>
+            <h2 class="card-title">Asesoramiento IT</h2>
             <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
+              Consultoría técnica para elegir el mejor hardware y software.
+              Mantenimiento y soporte para empresas.
             </p>
-            <div class="card-actions justify-end"></div>
-          </div>
-        </div>
-        <div
-          class="card card-border bg-base-100 w-96"
-          data-aos="fade_in"
-          data-aos-delay="400"
-        >
-          <div class="card-body">
-            <div class="btn btn-primary w-20"><Info /></div>
-            <h2 class="card-title">Card Title</h2>
-            <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
-            </p>
-            <div class="card-actions justify-end"></div>
-          </div>
-        </div>
-        <div
-          class="card card-border bg-base-100 w-96"
-          data-aos="fade_in"
-          data-aos-delay="400"
-        >
-          <div class="card-body">
-            <div class="btn btn-primary w-20"><Info /></div>
-            <h2 class="card-title">Card Title</h2>
-            <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
-            </p>
-            <div class="card-actions justify-end"></div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="quienes-somos" class="py-16 bg-base-100">
       <div
         class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center"
@@ -185,7 +195,7 @@ import { Cctv } from "@lucide/astro";
         </div>
         <div class="rounded-xl shadow-lg overflow-hidden" data-aos="fade_in">
           <img
-            src="/images/hexatec-team.jpg"
+            src=""
             alt="Equipo Hexatec"
             class="w-full h-auto object-cover"
           />
