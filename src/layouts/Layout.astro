@@ -1,15 +1,20 @@
 ---
 import "../styles/global.css";
+import "aos/dist/aos.css";
 ---
+
 <!doctype html>
 <html lang="es" data-theme="corporate">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Hexatec</title>
-	</head>
-	<body class="font-sansation">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <title>Hexatec</title>
+  </head>
+  <body class="font-sansation">
+    <slot />
+    <script type="module" src="/src/scripts/lenis.js"></script>
+    <script src="/src/scripts/aos.js"></script>
+  </body>
 </html>
